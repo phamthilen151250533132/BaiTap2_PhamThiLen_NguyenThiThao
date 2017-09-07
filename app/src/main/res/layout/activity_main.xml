@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.acer.baitap2.MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <EditText
+            android:id="@+id/work_enter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập công việc cần thực hiện"
+            android:lines="1"
+            android:textSize="40px"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:text="Giờ"
+                android:typeface="normal"
+                android:textSize="30px"
+                android:textStyle="bold"
+                android:padding="5px"
+                />
+            <EditText
+                android:id="@+id/hour_edit"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:hint="00"
+                android:textColorHint="@color/hint_color"
+                android:textSize="30px"
+                android:gravity="center"
+                android:padding="5px"
+                android:maxLength="2"
+                />
+            <TextView
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:text="Phút:"
+                android:typeface="normal"
+                android:textSize="30px"
+                android:textStyle="bold"
+                android:padding="5px"
+                />
+
+            <EditText
+                android:id="@+id/minute_edit"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="00"
+                android:maxLength="2"
+                android:padding="5px"
+                android:textColorHint="@color/hint_color"
+                android:textSize="30px" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/button_content"
+            android:textColor="@android:color/holo_red_dark" />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
